@@ -28,12 +28,12 @@ $ sudo apt-get upgrade
 ```
 ##### 4. Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
 ```bash
-   $ sudo ufw default deny incoming
-   $ sudo ufw default allow outgoing
-   $ sudo ufw allow www
-   $ sudo ufw allow ntp
-   $ sudo ufw allow 2200/tcp
-   $ sudo ufw enable
+$ sudo ufw default deny incoming
+$ sudo ufw default allow outgoing
+$ sudo ufw allow www
+$ sudo ufw allow ntp
+$ sudo ufw allow 2200/tcp
+$ sudo ufw enable
 ```
 ##### 5. Change the SSH port from 22 to 2200.
 Make sure to configure the **server firewall** before changing the port to 2200. Otherwise, you will lose your machine.
@@ -82,9 +82,8 @@ Make sure to configure the **server firewall** before changing the port to 2200.
     ```
 `You may need to take refrence from` [Digital ocean-Deploy a Flask App](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)`for furthur steps.`
 ##### 10. Install and configure Apache to serve a Python mod_wsgi application.
-    ```
     $ sudo apt-get install apache2 libapache2-mod-wsgi
-    ```
+    
 **Enable mod_wsgi:**
     ```
     $ sudo a2enmod wsgi
@@ -107,16 +106,12 @@ Make sure to configure the **server firewall** before changing the port to 2200.
     $ sudo su - postgres
     $ psql
    ```
-    * Create a new database named *catalog*:  
-    `# CREATE DATABASE catalog`
-    * Create a new user named *catalog*: 
-    `# CREATE USER catalog`
-    * Set a password for catalog user
-    `# ALTERROLE catalog with password password`;
-    * Grant permission to catalog user
-    `# GRANT ALL PRIVILEGES ON DATABASE catalog TO catlog`
-    * Exit from psql
-    `# exit`
+    
+    * Create a new database named *catalog*:    `# CREATE DATABASE catalog;`
+    * Create a new user named *catalog*:    `# CREATE USER catalog;`
+    * Set a password for catalog user:    `# ALTERROLE catalog with password password;`
+    * Grant permission to catalog user:    `# GRANT ALL PRIVILEGES ON DATABASE catalog TO catlog;`
+    * Exit from psql:    `# exit;`
 
 * Change the database connection to:
    ```
@@ -124,7 +119,7 @@ Make sure to configure the **server firewall** before changing the port to 2200.
    ```
 
 ##### 12. Install python-pip, Flask and other dependencies.
-Find the package name: [Ubuntu packages helpsite](https://packages.ubuntu.com)
+Find the package name: [Ubuntu Packages Search](https://packages.ubuntu.com)
    ```
     $ sudo apt-get install python-pip
     $ sudo pip install Flask
