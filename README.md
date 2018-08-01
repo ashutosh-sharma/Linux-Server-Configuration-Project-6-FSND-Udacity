@@ -5,11 +5,11 @@
 ### What did I learn?
 >> I have learnt how to access, secure, and perform the initial configuration of a bare-bones Linux server. You will then learn how to install and conzfigure a web and database server and actually host a web application.
 
-#### Link to live Project: [Item Catalog](http://www.13.126.78.60.xip.io/)
-
 **Public IP Address:** 13.126.78.60 || **Accessible SSH port:** 2200
+
+![Update](https://cdn2.iconfinder.com/data/icons/flaturici-set-6/512/sync-32.png) This Lightsail instance has been removed. Now, I am using **Amazon EC2**. **[Find Live Project Here](http://www.13.232.97.166.xip.io)** 
 _____________
-To complete this project, you'll need a Linux server instance. I have used **[Amazon Lightsail](https://aws.amazon.com/lightsail)**. If you don't already have an Amazon Web Services account, you'll need to set one up. Once you've done that, Follow the steps to configure the server. Go through AWS tutorials if you feel need to.
+To complete this project, you'll need a Linux server instance. I have used **[Amazon Lightsail](https://aws.amazon.com/lightsail)**. If you don't already have an Amazon Web Services account, you'll need to set one up. Once you've done that, Follow the steps to configure the server. Go through AWS tutorials if you feel need to. Later I will shift to **Amazon EC2** from **Amazon Lightsail**, just to get thorugh both major services of AWS.
 
 ## Steps to Configure Linux server
 ##### 1. Start a new Ubuntu Linux server instance on Amazon Lightsail. 
